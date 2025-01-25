@@ -53,10 +53,11 @@ sudo apt-get install -y kubelet kubeadm kubectl
 sudo apt-mark hold kubelet kubeadm kubectl
 ```
 ----
-after install kubernates do the coming
-# [Container Runtimes](https://v1-28.docs.kubernetes.io/docs/setup/production-environment/container-runtimes/)
+# after install kubernates do the coming
+# [Container Runtimes](https://v1-31.docs.kubernetes.io/docs/setup/production-environment/container-runtimes/)
 
 ## Install and configure prerequisites 
+
 
 
 1. #### Enable IPv4 packet forwarding
@@ -64,22 +65,24 @@ after install kubernates do the coming
       # sysctl params required by setup, params persist across reboots
       cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
       net.ipv4.ip_forward = 1
-      EOF   
-
+      EOF
       # Apply sysctl params without reboot
       sudo sysctl --system
+    
 
       #Verify that net.ipv4.ip_forward is set to 1 with:
       sysctl net.ipv4.ip_forward
+      
     ```
 
-2. #### Verify that the net.bridge.bridge-nf-call-iptables, net.bridge.bridge-nf-call-ip6tables, and net.ipv4.ip_forward system variables are set to 1 in your sysctl config 
-   ```sh
-      sysctl net.bridge.bridge-nf-call-iptables net.bridge.bridge-nf-call-ip6tables net.ipv4.ip_forward
-   ```
+2. #### Configuring the systemd cgroup driver
+   ## Is very important to do For ALLLLLLLLLLLLLLLLLLLLLLLLLLl nodes
 
-3. #### Configuring the systemd cgroup driver
-   To use the systemd cgroup driver in /etc/containerd/config.toml with runc, set
+To use the systemd cgroup driver in /etc/containerd/config.toml with runc, set
+  ```sh
+  containerd config default > /etc/containerd/config.toml
+  ```
+  To use the systemd cgroup driver in /etc/containerd/config.toml with runc, set
    ```sh
     [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
       ...
@@ -87,10 +90,25 @@ after install kubernates do the coming
         SystemdCgroup = true
    ```
 
-4. #### If you apply this change, make sure to restart containerd:
+
+1. #### If you apply this change, make sure to restart containerd:
    ```bash
        sudo systemctl restart containerd
    ```
+
+2. 
+```sh
+   sudo kubeadm init
+```
+
+---
+
+if you missing the token 
+```
+[text](https://kubernetes.io/docs/tasks/administer-cluster/kubeadm/adding-linux-nodes/)
+```
+
+kubectl apply -f https://reweave.azurewebsites.net/k8s/v1.29/net.yaml
 ------------------------------------------------------------
 [to use dockerd isntead of containerd](https://www.mirantis.com/blog/how-to-install-cri-dockerd-and-migrate-nodes-from-dockershim/)
 ------------------------------------------------------------
