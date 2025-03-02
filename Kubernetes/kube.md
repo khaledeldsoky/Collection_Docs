@@ -63,9 +63,9 @@ sudo apt-mark hold kubelet kubeadm kubectl
 1. #### Enable IPv4 packet forwarding
     ```bash
       # sysctl params required by setup, params persist across reboots
-      cat <<EOF | sudo tee /etc/sysctl.d/k8s.conf
-      net.ipv4.ip_forward = 1
-      EOF
+cat <<-EOF | sudo tee /etc/sysctl.d/k8s.conf
+net.ipv4.ip_forward = 1
+EOF
       # Apply sysctl params without reboot
       sudo sysctl --system
     
@@ -83,6 +83,11 @@ To use the systemd cgroup driver in /etc/containerd/config.toml with runc, set
   containerd config default > /etc/containerd/config.toml
   ```
   To use the systemd cgroup driver in /etc/containerd/config.toml with runc, set
+
+  ```sh
+  vim /etc/containerd/config.toml
+  ```
+
    ```sh
     [plugins."io.containerd.grpc.v1.cri".containerd.runtimes.runc]
       ...
