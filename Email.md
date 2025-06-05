@@ -5,7 +5,7 @@
 - I appreciate your support.
 - Your quick response will be appreciated.
 - Your quick response is highly appreciated.
-- We need your assistance to.
+- We need your assistance to .....
 
 
 # Attach
