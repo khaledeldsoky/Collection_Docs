@@ -17,6 +17,7 @@
 - Please take a look at the attachment.
 - Please review the attachment
 - Regarding the attachment.
+- As requested, I have attached log
 
 # Inform
 - Kindly be informed 
@@ -39,17 +40,19 @@
 - please notify me 
 
 #  متسنين ردك
-
 Looking forward to your feedback
 
-
+# Meeting Link
 Dear All,
     Kindly join us the below meeting link.
 
+
 Please be aware that Viavi will shut down the lab servers at 11:00 AM our time tomorrow in sha Alla. And later, they will take your agreement on the production date. 
+
 
 On behalf of Ahmed - بالنيابه عن
 
-observed - لاحظنا
-Moreover,- علاوه ع ذلك
-remained - ظل , فضل موجود
+observed    - لاحظنا
+Moreover,   - علاوه ع ذلك
+whether     - سواء , إذا
+remained    - ظل , فضل موجود
