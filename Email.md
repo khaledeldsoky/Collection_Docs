@@ -51,8 +51,8 @@ Please be aware that Viavi will shut down the lab servers at 11:00 AM our time t
 
 
 On behalf of Ahmed - بالنيابه عن
-
-observed    - لاحظنا
+Despite = Altough 
+Observed    - لاحظنا
 Moreover,   - علاوه ع ذلك
-whether     - سواء , إذا
-remained    - ظل , فضل موجود
+Whether     - سواء , إذا
+Remained    - ظل , فضل موجود
