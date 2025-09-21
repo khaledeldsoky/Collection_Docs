@@ -17,7 +17,7 @@ run buld and run your app
     docker build -t [dockehub_name]/[name_for_image] . 
     docker build -t khaledmohamedatia/app . 
 
-    docker run -itd --name app -p 8087:80 [dockehub_name]/[name_for_image]
+    docker run -itd --name [container_name] -p [expose_port]:[docker_port] [dockehub_name]/[name_for_image]
     docker run -itd --name app -p 8087:80 khaledmohamedatia/app
 
 

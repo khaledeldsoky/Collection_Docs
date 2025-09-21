@@ -29,30 +29,46 @@
 
 # Reminder
 - This is a kind reminder 
+- Kindly reminder 
+- This is a kind reminder regarding this case
+- Urgent reminder
+
+- A Gentle reminder
 
 # Thanks
 - Thanks to keep this in mind un the future.
 - Thank you for the clarification.
+- Thank you, and we really appreciate your quick support
+- Thank you for the quick help.
 
 # random 
 - Could you please confirm
 - I noticed that 
 - please notify me 
+- which we in turn 
+- I will keep you updated with any new developments.
 
 #  متسنين ردك
-Looking forward to your feedback
+- Looking forward to your feedback
+- Waiting for your response here.
 
 # Meeting Link
 Dear All,
     Kindly join us the below meeting link.
 
+# Apologies 
+Apologies for 
 
 Please be aware that Viavi will shut down the lab servers at 11:00 AM our time tomorrow in sha Alla. And later, they will take your agreement on the production date. 
 
 
-On behalf of Ahmed - بالنيابه عن
+On behalf of Ahmed  - بالنيابه عن
 Despite = Altough 
-Observed    - لاحظنا
-Moreover,   - علاوه ع ذلك
-Whether     - سواء , إذا
-Remained    - ظل , فضل موجود
+Observed            - لاحظنا
+Moreover,           - علاوه ع ذلك
+Whether             - سواء , إذا
+Remained            - ظل , فضل موجود
+re-instated         - اعاده تثبيتها
+revoked             - تم الغاءها
+reproduce           - اعاده انتاج
+in order to         - لكي , لاجل , عشان
